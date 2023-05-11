@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Labb 2</title>
+    <!-- Css Custom styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/?name=#"
+          ><img src="img/Pokémon-logo.jpg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="about.html">Info</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-image">
+      <div class="hero-text">
+        <h1>PokeDex</h1>
+        <h2>- Gotta search'em all!</h2>
+      </div>
+    </section>
+    <!-- form -->
+    <div class="login-box">
+      <h2>Select Pokemon</h2>
+
+      <form class="formSearch">
+        <div class="user-box">
+          <input type="text" name="name" required />
+          <label>Name</label>
+        </div>
+
+        <button class="submit" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+        <!-- error alert -->
+    <div class="error-alert"></div>
+     </form>
+    </div>
+    <!-- chart.js -->
+    <div class="chart">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+  </div>
+    <!-- Place for the result of the form -->
+    <div class="result"></div>
+    <!-- End of the page -->
+    <footer class="copyright"><p>Copyright &copy; 2022</p></footer>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
